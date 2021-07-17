@@ -1,0 +1,144 @@
+@font-face {
+  font-family: primaryFont;
+  src: url("font/Nurom-Bold.ttf");
+  font-weight: 200;
+}
+
+:root {
+  --primary: #ee1d21;
+  --secondary: #110f10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: primaryFont;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  height: 80px;
+  width: 90px;
+  background: rgb(247, 138, 156);
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.page {
+  display: flex;
+}
+
+.sidemenu {
+  min-width: 15vw;
+  min-height: 100vh;
+  background-color: var(--primary);
+}
+
+.logo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20%;
+  color: #fff;
+}
+
+.logo img {
+  width: 90%;
+  height: 90%;
+}
+
+.categories {
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.category {
+  height: 70px;
+  width: 70px;
+  margin: 1rem 0;
+  background: none;
+  border: 1px solid rgb(219, 213, 213);
+  border-radius: 3px;
+}
+
+.category img {
+  width: 80%;
+  height: 80%;
+}
+
+.selected {
+  border-bottom: 1px #fff solid;
+}
+
+.visited {
+  height: 80px;
+  width: 90px;
+  background: rgb(247, 138, 156);
+  border: none;
+}
+
+.visited:hover {
+  height: 70px;
+  width: 70px;
+  margin: 1rem 0;
+  background: none;
+  border: 1px solid rgb(219, 213, 213);
+  border-radius: 3px;
+}
+
+/* .mainarea */
+.mainarea {
+  min-width: 85vw;
+  min-height: 100vh;
+  background-color: var(--secondary);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar ul li a {
+  padding: 0.5rem 0;
+}
+
+.hero {
+  color: #fff;
+}
