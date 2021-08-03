@@ -292,6 +292,11 @@ li {
 
 .items .social i {
   margin-right: 15px;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.items .social i:hover {
+  color: #ff292c;
 }
 .buttons {
   display: flex;
@@ -310,7 +315,7 @@ select {
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #amount span {
@@ -323,6 +328,7 @@ select {
   border: none;
   color: #fff;
   cursor: pointer;
+  transition: all 0.08s ease-in-out;
 }
 #amount > button:hover {
   color: #ee1d21;
@@ -353,7 +359,24 @@ select {
 }
 
 .next i:hover {
-  color: #ee1d21;
+  color: #ff292c;
   text-shadow: 3px 3px rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
+}
+
+/********************************** About ********************/
+.page .max-width {
+  width: 100vw;
+}
+
+.about_background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/about_background.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  transform: scale(1.05);
+  border: 0;
+  z-index: -1;
 }
